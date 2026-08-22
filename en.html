@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OkeyLens — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --line: color-mix(in srgb, currentColor 15%, transparent); }
+  body { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .35rem; }
+  .meta { opacity: .65; font-size: .9rem; margin: 0 0 2rem; }
+  .lede { font-size: 1.05rem; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-size: .9em; padding: .1em .35em; border-radius: 4px;
+         background: color-mix(in srgb, currentColor 8%, transparent); }
+  a { color: inherit; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           font-size: .9rem; opacity: .75; }
+</style>
+<style>
+  .lang { font-size: .9rem; margin: 0 0 2rem; opacity: .8; }
+  .lang a { margin-right: .75rem; }
+  .lang strong { margin-right: .75rem; }
+</style></head>
+<body>
+
+<h1>OkeyLens — Privacy Policy</h1>
+<p class="meta">Effective 22 August 2026 · Version 1.0</p>
+<p class="lang"><a href="./">Türkçe</a><strong>English</strong></p>
+
+<p class="lede">OkeyLens is an app that recognises the tiles on your okey rack
+through the camera and works out what your hand scores. This document explains
+which data the app touches, which it does not, and what your rights are.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>The camera image is processed <strong>on your device</strong>; it is not saved.</li>
+  <li>No account is needed; no name, e-mail, phone number, location or contacts are collected.</li>
+  <li>For subscribers the app works <strong>without an internet connection</strong>;
+      on the free plan a connection is needed because the daily allowance is counted on the server.</li>
+  <li>There is <strong>no</strong> advertising network, analytics tool or third-party tracking code.</li>
+  <li>Only <strong>if you turn it on yourself</strong>, a limited number of camera
+      frames are sent to improve the recognition model (see section 6). It is off by default.</li>
+</ul>
+
+<h2>2. Data controller and contact</h2>
+<p>The developer of the app and the data controller under Turkish law (KVKK no. 6698)
+and the GDPR is Mehmet Afif Arsay. You can write about anything in this document to
+<a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a>.</p>
+
+<h2>3. Camera</h2>
+<p>The single purpose of the app is to recognise okey tiles in the image coming from
+the camera. For that we ask for the iOS camera permission; if you do not grant it the
+app still opens but cannot recognise anything.</p>
+<p>Frames from the camera are processed by two machine-learning models on the device.
+Those models ship inside the app; they do not go online to work. Frames are not written
+to disk, are not added to your photo library and — while the optional setting in
+section 6 is off — never leave the device. When you close the app the current frame is
+dropped from memory.</p>
+<p>The app does not access your photo library and does not ask for permission to.</p>
+
+<h2>4. Stored on your device</h2>
+<p>The following stay on your device only and are not sent to us:</p>
+<table>
+  <tr><th>What</th><th>Why</th><th>Where</th></tr>
+  <tr><td>Whether you have seen the introduction</td><td>So it is not shown at every launch</td><td>App settings</td></tr>
+  <tr><td>Recently used indicator tiles</td><td>So you can pick one with a single tap</td><td>App settings</td></tr>
+  <tr><td>Game preferences (variant, house rules, opening threshold)</td><td>So you do not set them again every hand</td><td>App settings</td></tr>
+  <tr><td>Data contribution preference and daily counter</td><td>To remember the state of the setting in section 6</td><td>App settings</td></tr>
+  <tr><td>Anonymous identity token</td><td>Created only if data contribution is on (see section 6)</td><td>iOS Keychain</td></tr>
+</table>
+<p>Deleting the app removes all of this from the device.</p>
+
+<h2>5. Data we do not collect</h2>
+<p>Name, surname, e-mail, phone number, date of birth, location, contact list,
+calendar, health data, payment details, advertising identifier (IDFA), cookies and
+permanent hardware identifiers: none of these are collected. There is no sign-in and
+no advertising in the app.</p>
+
+<h2>6. Optional data contribution</h2>
+<p>The <em>Send photos</em> switch in the game settings is <strong>off by
+default</strong>. Only if you turn it on, and only to improve the recognition model:</p>
+<ul>
+  <li><strong>a single frame</strong> from the camera is sent once a hand is complete;</li>
+  <li><strong>at most three</strong> frames a day, and only while connected to <strong>Wi-Fi</strong>;</li>
+  <li>the frame that is sent is the whole image the camera sees at that moment —
+      including everything else in the frame;</li>
+  <li>an <strong>anonymous installation identifier</strong> accompanies the frames so
+      that frames from the same device can be told apart and the daily limit enforced.
+      That identifier is random, is not linked to your identity or to any account, and
+      a new one is created if you delete and reinstall the app;</li>
+  <li>sending stops the moment you switch it off.</li>
+</ul>
+<p>The legal basis is your explicit consent (KVKK art. 5/1, GDPR art. 6(1)(a)): you
+give it by turning the setting on and withdraw it by turning it off. Withdrawing does
+not by itself delete frames already sent; if you want them deleted, see section 10.</p>
+
+<h2>6b. Subscription</h2>
+<p>The OkeyLens Pro subscription is sold through the App Store. Your payment details
+stay with Apple; no card number, name or billing information reaches us.</p>
+<p>To verify whether a subscription is valid and to let you restore it when you change
+device we use <strong>RevenueCat</strong>. What goes to RevenueCat is the App Store
+purchase record and an <strong>anonymous user identifier</strong> created by the app;
+it is not linked to your name or your Apple account.</p>
+<p>On the free plan, so that the daily scan allowance can be counted, a counter is
+written to the server each time we show a result. All that is written is the anonymous
+installation identifier, the date and how many times it has been used that day; your
+tiles, your hands and your scores are not sent. The only reason the counter lives on
+the server is so that the device clock does not decide when the day turns over.</p>
+
+<h2>7. Service providers and international transfer</h2>
+<p>The frames in section 6 and the scan counter are stored on Google Firebase
+(<code>okeylens-dataset</code>); the anonymous identity token comes from Google Identity
+Toolkit. Subscription verification goes through RevenueCat, Inc. Google acts purely as
+a hosting provider in this processing and does not use the data for its own purposes.
+Servers may be located outside Türkiye; by turning the setting on you also consent to
+that transfer (KVKK art. 9, GDPR Chapter V).</p>
+<p>Apart from these there is no other server the app connects to, no other third-party
+service it uses and no other SDK embedded in it.</p>
+
+<h2>8. Retention</h2>
+<p>Frames that have been sent are kept as long as the recognition model is being
+trained and are deleted once the purpose no longer applies. The preferences on your
+device stay until you delete the app.</p>
+
+<h2>9. Security</h2>
+<p>Everything that goes over the network is encrypted with HTTPS/TLS. The anonymous
+identity token is held in the iOS Keychain rather than in plain text and is marked so
+that it does not end up in device backups. The app stores no other credentials.</p>
+
+<h2>10. Your rights</h2>
+<p>Under KVKK art. 11 and the GDPR you have the right to learn whether your personal
+data is being processed, to request information about it, to ask for it to be
+rectified, erased or destroyed, and to object to the processing.</p>
+<p>If you want the frames you sent to be deleted, write to
+<a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a>. Because we hold
+nothing that identifies you, the only way we can match your request is the anonymous
+installation identifier in the app; that is why you need to write
+<strong>before deleting</strong> the app. Requests are answered within 30 days at the
+latest.</p>
+
+<h2>11. Children</h2>
+<p>The app is suitable for all ages (4+) and does not knowingly collect data from
+children. To keep children from turning on the setting in section 6, it is kept in a
+hidden part of the game settings page.</p>
+
+<h2>12. Tracking and advertising</h2>
+<p>The app does not carry out <em>tracking</em> as Apple defines it: your data is not
+combined with data from third parties, is not used for ad targeting and is not sold to
+data brokers. For that reason the app does not show the tracking permission (ATT)
+prompt either.</p>
+<p>Data that Apple itself collects while you download and use the app (download
+statistics, and crash and usage reports if they are enabled in your device settings) is
+subject to Apple's privacy policy and does not reach us in a form linked to your
+identity.</p>
+
+<h2>13. Changes to this document</h2>
+<p>If the policy changes this page is updated and the effective date at the top changes.
+If there is a material change in the data collected or the purpose, the change is also
+announced inside the app.</p>
+
+<footer>
+  OkeyLens · <a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a>
+</footer>
+
+</body>
+</html>
