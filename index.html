@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OkeyLens — Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; --line: color-mix(in srgb, currentColor 15%, transparent); }
+  body { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+         font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .35rem; }
+  .meta { opacity: .65; font-size: .9rem; margin: 0 0 2rem; }
+  .lede { font-size: 1.05rem; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-size: .9em; padding: .1em .35em; border-radius: 4px;
+         background: color-mix(in srgb, currentColor 8%, transparent); }
+  a { color: inherit; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>OkeyLens — Gizlilik Politikası</h1>
+<p class="meta">Yürürlük tarihi: 22 Ağustos 2026 · Sürüm 1.0</p>
+
+<p class="lede">OkeyLens, kameranızı okey ıstakanıza tuttuğunuzda taşları tanıyıp
+elinizin puanını hesaplayan bir uygulamadır. Bu metin, uygulamanın hangi verilere
+dokunduğunu, hangilerine dokunmadığını ve bu konudaki haklarınızı anlatır.</p>
+
+<h2>1. Özet</h2>
+<ul>
+  <li>Kamera görüntüsü <strong>cihazınızın üzerinde</strong> işlenir; kaydedilmez.</li>
+  <li>Hesap açmanız gerekmez; ad, e-posta, telefon, konum, kişiler toplanmaz.</li>
+  <li>Uygulama <strong>internet bağlantısı olmadan</strong> tam olarak çalışır.</li>
+  <li>Reklam ağı, analitik aracı ve üçüncü taraf izleme kodu <strong>yoktur</strong>.</li>
+  <li>Yalnızca <strong>siz açarsanız</strong>, tanıma modelini geliştirmek için
+      sınırlı sayıda kamera karesi gönderilir (bkz. bölüm 6). Varsayılan kapalıdır.</li>
+</ul>
+
+<h2>2. Veri sorumlusu ve iletişim</h2>
+<p>Uygulamanın geliştiricisi ve 6698 sayılı KVKK anlamında veri sorumlusu
+Mehmet Afif Arsay'dır. Bu metindeki her konuda
+<a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a> adresinden
+yazabilirsiniz.</p>
+
+<h2>3. Kamera</h2>
+<p>Uygulamanın tek işlevi kameradan gelen görüntüde okey taşlarını tanımaktır.
+Bunun için iOS'un kamera iznini istiyoruz; izni vermezseniz uygulama açılır ama
+tanıma yapamaz.</p>
+<p>Kameradan gelen kareler, cihazın üzerindeki iki makine öğrenmesi modeliyle
+işlenir. Bu modeller uygulamanın içinde gelir; çalışmak için ağa çıkmazlar.
+Kareler diske yazılmaz, fotoğraf albümünüze eklenmez ve — 6. bölümdeki isteğe
+bağlı ayar kapalıyken — cihazdan hiç çıkmaz. Uygulamayı kapattığınızda o anki
+kare bellekten silinir.</p>
+<p>Uygulama fotoğraf kitaplığınıza erişmez ve erişim izni istemez.</p>
+
+<h2>4. Cihazınızda saklananlar</h2>
+<p>Aşağıdakiler yalnızca cihazınızda durur, bize gönderilmez:</p>
+<table>
+  <tr><th>Ne</th><th>Niçin</th><th>Nerede</th></tr>
+  <tr><td>Giriş anlatımını gördünüz mü bilgisi</td><td>Anlatımı her açılışta tekrar göstermemek için</td><td>Uygulama ayarları</td></tr>
+  <tr><td>Son kullanılan gösterge taşları</td><td>Gösterge girerken tek dokunuşla seçebilmeniz için</td><td>Uygulama ayarları</td></tr>
+  <tr><td>Oyun tercihleri (tür, ev kuralları, açma eşiği)</td><td>Her elde yeniden ayarlamamanız için</td><td>Uygulama ayarları</td></tr>
+  <tr><td>Veri katkısı tercihi ve günlük sayaç</td><td>6. bölümdeki ayarın durumunu hatırlamak için</td><td>Uygulama ayarları</td></tr>
+  <tr><td>Anonim kimlik jetonu</td><td>Yalnızca veri katkısı açıksa oluşur (bkz. bölüm 6)</td><td>iOS Anahtar Zinciri</td></tr>
+</table>
+<p>Uygulamayı sildiğinizde bunların hepsi cihazdan silinir.</p>
+
+<h2>5. Toplamadığımız veriler</h2>
+<p>Ad, soyad, e-posta, telefon numarası, doğum tarihi, konum, kişi listesi,
+takvim, sağlık verisi, ödeme bilgisi, reklam kimliği (IDFA), çerez ve cihazın
+kalıcı donanım numaraları: hiçbiri toplanmaz. Uygulamada oturum açma, satın alma
+ve reklam yoktur.</p>
+
+<h2>6. İsteğe bağlı veri katkısı</h2>
+<p>Oyun ayarlarındaki <em>Fotoğraf gönder</em> anahtarı <strong>varsayılan olarak
+kapalıdır</strong>. Yalnızca siz açarsanız, tanıma modelini geliştirmek amacıyla:</p>
+<ul>
+  <li>el tamamlandığında kameradan <strong>tek bir kare</strong> gönderilir;</li>
+  <li>günde <strong>en fazla üç</strong> kare, yalnızca <strong>Wi-Fi</strong> bağlıyken;</li>
+  <li>gönderilen kare, o anda kameranın gördüğü görüntünün tamamıdır — çerçevede
+      kalan her şey dahil;</li>
+  <li>karelere, aynı cihazdan gelenleri ayırmak ve günlük sınırı uygulamak için
+      <strong>anonim bir kurulum kimliği</strong> eşlik eder. Bu kimlik
+      rastgeledir, kimliğinizle veya bir hesapla ilişkili değildir; uygulamayı
+      silip kurduğunuzda yenisi oluşur;</li>
+  <li>anahtarı kapattığınız anda gönderim durur.</li>
+</ul>
+<p>Hukuki dayanak açık rızanızdır (KVKK m.5/1, GDPR m.6/1-a): rızayı ayarı
+açarak verir, kapatarak geri çekersiniz. Geri çekmek, o ana kadar gönderilmiş
+kareleri kendiliğinden silmez; silinmesini isterseniz 10. bölüme bakın.</p>
+
+<h2>7. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
+<p>6. bölümdeki kareler Google Firebase Storage üzerinde
+(<code>okeylens-dataset</code>) saklanır; anonim kimlik jetonu Google Identity
+Toolkit'ten alınır. Google bu işlemede yalnızca barındırma hizmeti verir ve
+verileri kendi amaçları için kullanmaz. Sunucular Türkiye dışında bulunabilir;
+ayarı açtığınızda bu aktarıma da rıza vermiş olursunuz (KVKK m.9, GDPR Bölüm V).</p>
+<p>Bunun dışında uygulamanın bağlandığı başka bir sunucu, kullandığı başka bir
+üçüncü taraf servis ya da uygulamaya gömülü herhangi bir SDK yoktur.</p>
+
+<h2>8. Saklama süresi</h2>
+<p>Gönderilen kareler, tanıma modeli eğitildiği sürece saklanır ve kullanım
+amacı ortadan kalktığında silinir. Cihazınızdaki tercihler siz uygulamayı silene
+kadar durur.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Ağ üzerinden giden her şey HTTPS/TLS ile şifrelenir. Anonim kimlik jetonu düz
+metin yerine iOS Anahtar Zinciri'nde tutulur ve cihaz yedeklerine çıkmayacak
+şekilde işaretlenir. Uygulama başka hiçbir kimlik bilgisi saklamaz.</p>
+
+<h2>10. Haklarınız</h2>
+<p>KVKK m.11 ve GDPR uyarınca; kişisel verinizin işlenip işlenmediğini öğrenme,
+buna ilişkin bilgi talep etme, düzeltilmesini, silinmesini veya yok edilmesini
+isteme ve işlemeye itiraz etme haklarına sahipsiniz.</p>
+<p>Gönderdiğiniz karelerin silinmesini istiyorsanız
+<a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a> adresine
+yazın. Sizi tanımlayan hiçbir bilgimiz olmadığı için talebinizi
+eşleştirebilmemizin tek yolu, uygulamadaki anonim kurulum kimliğidir; bu yüzden
+uygulamayı <strong>silmeden önce</strong> yazmanız gerekir. Talepler en geç
+30 gün içinde yanıtlanır.</p>
+
+<h2>11. Çocuklar</h2>
+<p>Uygulama her yaşa uygundur (4+) ve çocuklardan bilerek veri toplamaz. 6.
+bölümdeki ayarın çocuklar tarafından açılmaması için ayar, oyun ayarları
+sayfasında gizli bir bölümde tutulur.</p>
+
+<h2>12. İzleme ve reklam</h2>
+<p>Uygulama, Apple'ın tanımladığı anlamda <em>izleme</em> yapmaz: verileriniz
+üçüncü tarafların verileriyle birleştirilmez, reklam hedefleme için kullanılmaz,
+veri simsarlarına satılmaz. Bu nedenle uygulama izleme izni (ATT) penceresi de
+göstermez.</p>
+<p>Uygulamayı App Store'dan indirmeniz ve kullanmanız sırasında Apple'ın kendi
+topladığı veriler (indirme istatistikleri, cihaz ayarlarınızda açıksa çökme ve
+kullanım raporları) Apple'ın gizlilik politikasına tabidir ve bize kimliğinizle
+ilişkili biçimde ulaşmaz.</p>
+
+<h2>13. Bu metindeki değişiklikler</h2>
+<p>Politika değişirse bu sayfa güncellenir ve baştaki yürürlük tarihi değişir.
+Toplanan veride veya amaçta esaslı bir değişiklik olursa, değişiklik uygulama
+içinde ayrıca duyurulur.</p>
+
+<footer>
+  OkeyLens · <a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a>
+</footer>
+
+</body>
+</html>
