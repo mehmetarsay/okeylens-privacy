@@ -38,7 +38,8 @@ dokunduğunu, hangilerine dokunmadığını ve bu konudaki haklarınızı anlat�
 <ul>
   <li>Kamera görüntüsü <strong>cihazınızın üzerinde</strong> işlenir; kaydedilmez.</li>
   <li>Hesap açmanız gerekmez; ad, e-posta, telefon, konum, kişiler toplanmaz.</li>
-  <li>Uygulama <strong>internet bağlantısı olmadan</strong> tam olarak çalışır.</li>
+  <li>Abone kullanıcılar için uygulama <strong>internet bağlantısı olmadan</strong>
+      çalışır; ücretsiz kullanımda günlük hak sunucuda sayıldığı için bağlantı gerekir.</li>
   <li>Reklam ağı, analitik aracı ve üçüncü taraf izleme kodu <strong>yoktur</strong>.</li>
   <li>Yalnızca <strong>siz açarsanız</strong>, tanıma modelini geliştirmek için
       sınırlı sayıda kamera karesi gönderilir (bkz. bölüm 6). Varsayılan kapalıdır.</li>
@@ -97,10 +98,24 @@ kapalıdır</strong>. Yalnızca siz açarsanız, tanıma modelini geliştirmek a
 açarak verir, kapatarak geri çekersiniz. Geri çekmek, o ana kadar gönderilmiş
 kareleri kendiliğinden silmez; silinmesini isterseniz 10. bölüme bakın.</p>
 
+<h2>6b. Abonelik</h2>
+<p>OkeyLens Pro aboneliği App Store üzerinden satılır. Ödeme bilgileriniz
+Apple'da kalır; bize kart numarası, ad ya da fatura bilgisi ulaşmaz.</p>
+<p>Aboneliğin geçerli olup olmadığını doğrulamak ve cihaz değiştirdiğinizde
+geri yükleyebilmeniz için <strong>RevenueCat</strong> hizmetini kullanıyoruz.
+RevenueCat'e giden veri, App Store'un satın alma kaydı ve uygulamanın
+oluşturduğu <strong>anonim bir kullanıcı kimliğidir</strong>; adınızla veya
+Apple hesabınızla ilişkili değildir.</p>
+<p>Ücretsiz kullanımda günlük tarama hakkının sayılması için, sonucu her
+gösterdiğimizde sunucuya bir sayaç yazılır. Yazılan tek şey anonim kurulum
+kimliği, tarih ve o gün kaç kez kullanıldığıdır; taşlarınız, elleriniz ve
+puanlarınız gönderilmez. Sayacın sunucuda tutulmasının tek sebebi, günün ne
+zaman döndüğüne cihazın saatinin karar vermemesidir.</p>
+
 <h2>7. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
-<p>6. bölümdeki kareler Google Firebase Storage üzerinde
+<p>6. bölümdeki kareler ve tarama sayacı Google Firebase üzerinde
 (<code>okeylens-dataset</code>) saklanır; anonim kimlik jetonu Google Identity
-Toolkit'ten alınır. Google bu işlemede yalnızca barındırma hizmeti verir ve
+Toolkit'ten alınır. Abonelik doğrulaması RevenueCat, Inc. üzerinden yapılır. Google bu işlemede yalnızca barındırma hizmeti verir ve
 verileri kendi amaçları için kullanmaz. Sunucular Türkiye dışında bulunabilir;
 ayarı açtığınızda bu aktarıma da rıza vermiş olursunuz (KVKK m.9, GDPR Bölüm V).</p>
 <p>Bunun dışında uygulamanın bağlandığı başka bir sunucu, kullandığı başka bir
