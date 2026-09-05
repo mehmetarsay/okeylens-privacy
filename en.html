@@ -32,7 +32,7 @@
 <body>
 
 <h1>OkeyLens — Privacy Policy</h1>
-<p class="meta">Effective 22 August 2026 · Version 1.0</p>
+<p class="meta">Effective 5 September 2026 · Version 1.0.1</p>
 <p class="lang"><a href="./">Türkçe</a><strong>English</strong></p>
 
 <p class="lede">OkeyLens is an app that recognises the tiles on your okey rack
@@ -45,9 +45,12 @@ which data the app touches, which it does not, and what your rights are.</p>
   <li>No account is needed; no name, e-mail, phone number, location or contacts are collected.</li>
   <li>For subscribers the app works <strong>without an internet connection</strong>;
       on the free plan a connection is needed because the daily allowance is counted on the server.</li>
-  <li>There is <strong>no</strong> advertising network, analytics tool or third-party tracking code.</li>
-  <li>Only <strong>if you turn it on yourself</strong>, a limited number of camera
-      frames are sent to improve the recognition model (see section 6). It is off by default.</li>
+  <li>There is <strong>no</strong> analytics tool and no third-party tracking code.
+      Ads are served through Google AdMob, and Pro subscribers see none of them
+      (see sections 6c and 12).</li>
+  <li>Only <strong>if you send one yourself</strong>, a limited number of
+      <strong>screenshots</strong> are sent so that we can look into a problem
+      (see section 6). Nothing is ever sent on its own.</li>
 </ul>
 
 <h2>2. Data controller and contact</h2>
@@ -61,8 +64,8 @@ the camera. For that we ask for the iOS camera permission; if you do not grant i
 app still opens but cannot recognise anything.</p>
 <p>Frames from the camera are processed by two machine-learning models on the device.
 Those models ship inside the app; they do not go online to work. Frames are not written
-to disk, are not added to your photo library and — while the optional setting in
-section 6 is off — never leave the device. When you close the app the current frame is
+to disk, are not added to your photo library and — unless you send a problem
+report yourself, see section 6 — never leave the device. When you close the app the current frame is
 dropped from memory.</p>
 <p>The app does not access your photo library and does not ask for permission to.</p>
 
@@ -73,34 +76,46 @@ dropped from memory.</p>
   <tr><td>Whether you have seen the introduction</td><td>So it is not shown at every launch</td><td>App settings</td></tr>
   <tr><td>Recently used indicator tiles</td><td>So you can pick one with a single tap</td><td>App settings</td></tr>
   <tr><td>Game preferences (variant, house rules, opening threshold)</td><td>So you do not set them again every hand</td><td>App settings</td></tr>
-  <tr><td>Data contribution preference and daily counter</td><td>To remember the state of the setting in section 6</td><td>App settings</td></tr>
-  <tr><td>Anonymous identity token</td><td>Created only if data contribution is on (see section 6)</td><td>iOS Keychain</td></tr>
+  <tr><td>Daily counter of reports sent</td><td>To enforce the daily limit in section 6</td><td>App settings</td></tr>
+  <tr><td>Anonymous identity token</td><td>Created only if you send a report (see section 6)</td><td>iOS Keychain</td></tr>
 </table>
 <p>Deleting the app removes all of this from the device.</p>
 
 <h2>5. Data we do not collect</h2>
 <p>Name, surname, e-mail, phone number, date of birth, location, contact list,
-calendar, health data, payment details, advertising identifier (IDFA), cookies and
-permanent hardware identifiers: none of these are collected. There is no sign-in and
-no advertising in the app.</p>
+calendar, health data, payment details, cookies and permanent hardware identifiers:
+none of these are collected. There is no sign-in.</p>
+<p>The app carries two kinds of ad: a banner that sits in an empty part of the
+screen, and a rewarded ad <em>you start yourself</em> once your free scans for the
+day are used up. There are no app-open or interstitial ads; no ad ever interrupts
+the hand you are playing. <strong>Pro subscribers see no ads at all.</strong>
+Details are in sections 6c and 12.</p>
 
-<h2>6. Optional data contribution</h2>
-<p>The <em>Send photos</em> switch in the game settings is <strong>off by
-default</strong>. Only if you turn it on, and only to improve the recognition model:</p>
+<h2>6. Problem reports</h2>
+<p>The warning button in the top-right corner of the screen sends a problem report —
+it is how you tell us "the tiles are not being read correctly". A
+<strong>screenshot</strong> taken at that moment goes with the report so that we can
+look into it. That image contains both the scene the camera sees and what the app is
+showing on screen (the recognised tiles, the rack, the total); the raw camera image is
+not sent. In detail:</p>
 <ul>
-  <li><strong>a single frame</strong> from the camera is sent once a hand is complete;</li>
-  <li><strong>at most three</strong> frames a day, and only while connected to <strong>Wi-Fi</strong>;</li>
-  <li>the frame that is sent is the whole image the camera sees at that moment —
-      including everything else in the frame;</li>
-  <li>an <strong>anonymous installation identifier</strong> accompanies the frames so
-      that frames from the same device can be told apart and the daily limit enforced.
+  <li>nothing is sent unless you tap <em>Send</em>; the app never sends anything on
+      its own;</li>
+  <li>if no tiles are visible on screen, nothing is sent;</li>
+  <li><strong>at most ten</strong> images a day, and only while connected to
+      <strong>Wi-Fi</strong>;</li>
+  <li>the image that is sent is everything on screen at that moment — including
+      whatever else is inside the camera preview;</li>
+  <li>the images are used to improve recognition and the app itself;</li>
+  <li>an <strong>anonymous installation identifier</strong> accompanies the images so
+      that images from the same device can be told apart and the daily limit enforced.
       That identifier is random, is not linked to your identity or to any account, and
       a new one is created if you delete and reinstall the app;</li>
-  <li>sending stops the moment you switch it off.</li>
+  <li>if you send no report, no image ever leaves your device.</li>
 </ul>
 <p>The legal basis is your explicit consent (KVKK art. 5/1, GDPR art. 6(1)(a)): you
-give it by turning the setting on and withdraw it by turning it off. Withdrawing does
-not by itself delete frames already sent; if you want them deleted, see section 10.</p>
+give it by tapping <em>Send</em> and withhold it by not sending a report. If you want
+an image you have already sent to be deleted, see section 10.</p>
 
 <h2>6b. Subscription</h2>
 <p>The OkeyLens Pro subscription is sold through the App Store. Your payment details
@@ -115,15 +130,32 @@ installation identifier, the date and how many times it has been used that day; 
 tiles, your hands and your scores are not sent. The only reason the counter lives on
 the server is so that the device clock does not decide when the day turns over.</p>
 
+<h2>6c. Scans earned by watching an ad</h2>
+<p>When your free scans are used up you can, if you want to, watch a short ad and earn
+more scans. At most three times a day. You are free not to watch: your allowance comes
+back the next day, or an OkeyLens Pro subscription removes the limit altogether.</p>
+<p>The ads are served by <strong>Google AdMob</strong>. When an ad is shown, data such
+as your device's advertising identifier, coarse (country-level) location and device and
+app information reaches AdMob; that data is subject to Google's privacy policy. We
+neither see nor store it.</p>
+<p>Google's server confirms to us that the ad was really watched. The only things that
+reach us in that confirmation are the <strong>anonymous installation identifier</strong>
+created by the app and the reward's transaction number; it carries nothing about your
+identity, the ad you watched or the advertiser.</p>
+<p><strong>Pro subscribers are shown no ads at all.</strong></p>
+
 <h2>7. Service providers and international transfer</h2>
 <p>The frames in section 6 and the scan counter are stored on Google Firebase
 (<code>okeylens-dataset</code>); the anonymous identity token comes from Google Identity
-Toolkit. Subscription verification goes through RevenueCat, Inc. Google acts purely as
-a hosting provider in this processing and does not use the data for its own purposes.
+Toolkit. Subscription verification goes through RevenueCat, Inc. Ads (banner and
+rewarded) are served through Google AdMob (section 6c). On the Firebase side Google
+acts purely as a hosting provider and does not use the data for its own purposes; on
+the AdMob side Google's own privacy policy applies.
 Servers may be located outside Türkiye; by turning the setting on you also consent to
 that transfer (KVKK art. 9, GDPR Chapter V).</p>
-<p>Apart from these there is no other server the app connects to, no other third-party
-service it uses and no other SDK embedded in it.</p>
+<p>The SDKs embedded in the app are limited to these: RevenueCat (subscriptions) and
+Google Mobile Ads (banner and rewarded ads). Apart from those there is no other server
+the app connects to and no other third-party service it uses.</p>
 
 <h2>8. Retention</h2>
 <p>Frames that have been sent are kept as long as the recognition model is being
@@ -152,10 +184,28 @@ children. To keep children from turning on the setting in section 6, it is kept 
 hidden part of the game settings page.</p>
 
 <h2>12. Tracking and advertising</h2>
-<p>The app does not carry out <em>tracking</em> as Apple defines it: your data is not
-combined with data from third parties, is not used for ad targeting and is not sold to
-data brokers. For that reason the app does not show the tracking permission (ATT)
-prompt either.</p>
+<p>The data <strong>we</strong> collect is not used for <em>tracking</em> as Apple
+defines it: it is not combined with data from third parties, is not used for ad
+targeting and is not sold to data brokers.</p>
+<p>Google AdMob, which serves the ads, can however use your device's
+<strong>advertising identifier</strong> (IDFA) for tracking. That is why, before
+starting the ad SDK, the app shows Apple's <strong>App Tracking Transparency</strong>
+permission prompt:</p>
+<ul>
+  <li><strong>If you do not allow it</strong> — and that is the default — your
+      advertising identifier is never reached and ads are not personalised. No feature
+      of the app is turned off: earning scans by watching a rewarded ad works exactly
+      the same.</li>
+  <li><strong>If you allow it</strong>, your advertising identifier is passed to AdMob
+      and ads can be chosen according to your interests. You can change your mind at
+      any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+</ul>
+<p>Either way the choice only affects advertising; nothing that goes to our own server
+changes.</p>
+<p>The ads in the app are a banner and, once your free scans are used up, a rewarded ad
+<em>you start yourself</em> (section 6c). No ad covers the screen at launch or in the
+middle of a hand. Your game information — your tiles, your hands, your scores — never
+goes to the ad network in any form. Pro subscribers are shown no ads at all.</p>
 <p>Data that Apple itself collects while you download and use the app (download
 statistics, and crash and usage reports if they are enabled in your device settings) is
 subject to Apple's privacy policy and does not reach us in a form linked to your
@@ -166,8 +216,16 @@ identity.</p>
 If there is a material change in the data collected or the purpose, the change is also
 announced inside the app.</p>
 
+<h2>14. Terms of Use</h2>
+<p>The app is subject to Apple's standard end user licence agreement (EULA):
+<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>.
+The same link appears on the app's subscription screen and in the App Store
+description — Apple requires it in all three places for apps offering auto-renewable
+subscriptions (Guideline 3.1.2(c)).</p>
+
 <footer>
-  OkeyLens · <a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a>
+  OkeyLens · <a href="mailto:mehmetarsay5@gmail.com">mehmetarsay5@gmail.com</a><br>
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
 </footer>
 
 </body>
